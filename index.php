@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
-$host = getenv('MYSQLHOST') ?: 'localhost';
+$host = getenv('MYSQLHOST') ?: '127.0.0.1';
 $db   = getenv('MYSQLDATABASE') ?: 'ejemplo-backend';
 $user = getenv('MYSQLUSER') ?: 'root';
 $pass = getenv('MYSQLPASSWORD') ?: '';
